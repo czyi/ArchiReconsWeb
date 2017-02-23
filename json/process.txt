@@ -1,0 +1,21 @@
+nodejs
+express
+配置静态文件
+处理响应
+ajax
+
+xml转json
+
+webgl
+建模，场景光线等等
+阴影（undo）？？？？？
+纹理
+
+导入外部模型
+(js转json,obj,obj材质)
+解释一下各种模型的格式
+
+重新生成2d平面图
+html5 canvas直接绘图
+
+家具交互

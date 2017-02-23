@@ -1,0 +1,28 @@
+<cemo-scene>
+	<archi-info sizex="1605.000000" sizez="1601.000000" /><!--建筑底面的长宽-->
+	<archi-scene>
+		<archi-wall altitude="0.000000" generator="0" height="270.000000" id="0" thickness="23.000000" />
+		...<!--墙壁的最低点海拔，属性值，高度，ID，厚度-->
+		<archi-window altitude="90.000000" generator="33" height="160.000000" id="33" thickness="23.000000" wall-height="270.000000" />
+		...<!--窗户-->
+		<archi-door altitude="0.000000" generator="40" height="220.000000" id="40" thickness="23.000000" />
+		...<!--门-->
+	</archi-scene>
+	<mark-scene />
+	<aux-scene><!--场景元素的位置-->
+		<aux-polyline closed="false" id="0" size="2">
+			<point name="pt" x="710.000000" y="0.000000" z="90.000000" />
+			<point name="pt" x="82.000000" y="0.000000" z="90.000000" />
+		...
+		<aux-polyline closed="false" id="33" size="2">
+			<point name="pt" x="82.000000" y="0.000000" z="493.000000" />
+			<point name="pt" x="82.000000" y="0.000000" z="366.000000" />
+		</aux-polyline>
+		...
+		<aux-polyline closed="false" id="40" size="2">
+			<point name="pt" x="648.000000" y="0.000000" z="613.000000" />
+			<point name="pt" x="648.000000" y="0.000000" z="488.000000" />
+		</aux-polyline>
+		...
+	</aux-scene>
+</cemo-scene>

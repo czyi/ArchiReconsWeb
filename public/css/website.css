@@ -1,0 +1,41 @@
+html, body { height: 100%; margin: 0; padding: 0 0 0 20px;}
+body { background-color: #f3f3f3; font:12px 'arial'; color: #555555; }
+a { color: #C01313;}	
+a:hover {}
+#scrollbar1 { width: 520px; clear: both; margin: 20px 0 10px; }
+#scrollbar1 .viewport { width: 500px; height: 200px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar1 .scrollbar,
+#scrollbar1 .thumb .end,
+#scrollbar1 .thumb { background: transparent url(../images/bg-scrollbar.png) no-repeat; }
+#scrollbar1 .scrollbar { position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar1 .track	{ background: transparent url(../images/bg-scrollbar-end.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { background-position: 100% 100%; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar1 .thumb .end { background-position: 100% 0; height: 5px; width: 13px; }
+#scrollbar1 .disable { display: none; }
+
+#scrollbar2 { width: 236px; clear: both; margin: 20px 0 10px; }
+#scrollbar2 .viewport { width: 236px; height: 125px; overflow: hidden; position: relative; }
+#scrollbar2 .overview { list-style: none; width: 1416px; padding: 0; margin: 0; position: absolute; left: 0; top: 0;  }
+#scrollbar2 .overview img{ float: left; }
+#scrollbar2 .scrollbar,
+#scrollbar2 .thumb .end,
+#scrollbar2 .thumb { background: transparent url(../images/design/bg-scrollbar-x.png) no-repeat; }
+#scrollbar2 .scrollbar { position: relative; overflow: hidden;  margin: 0 0 5px; clear: both; height: 15px; }
+#scrollbar2 .track { background: transparent url(../images/design/bg-scrollbar-x-end.png) no-repeat 100% 0; width: 100%; height:13px; position: relative; padding: 1px 0; }
+#scrollbar2 .thumb { background-position: 100% -15px; height: 13px; cursor: pointer; overflow: hidden; position: absolute; left: 0; }
+#scrollbar2 .thumb .end{ background-position: 0 -15px; height: 13px; width: 5px;}
+#scrollbar2 .disable { display: none; }
+
+#scrollbar3 { width: 320px; clear: both; margin: 20px 0 10px; }
+#scrollbar3 .viewport { width: 300px; height: 300px; overflow: hidden; position: relative; }
+#scrollbar3 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar3 .scrollbar,
+#scrollbar3 .thumb .end,
+#scrollbar3 .thumb { background: transparent url(../images/design/bg-scrollbar.png) no-repeat; }
+#scrollbar3 .scrollbar { position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollbar3 .track	{ background: transparent url(../images/design/bg-scrollbar-end.png) no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollbar3 .thumb { background-position: 100% 100%; height: 20px; width: 13px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar3 .thumb .end { background-position: 100% 0; height: 5px; width: 13px; }
+#scrollbar3 .disable { display: none; }
+/*代码整理：www.97zzw.com - 97站长网（站长资源）*/

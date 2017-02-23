@@ -1,0 +1,103 @@
+<cemo-scene>
+	<archi-info sizex="1802.000000" sizez="1097.000000" />
+	<archi-scene>
+		<archi-wall altitude="0.000000" generator="0" height="270.000000" id="0" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="1" height="270.000000" id="1" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="2" height="270.000000" id="2" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="3" height="270.000000" id="3" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="4" height="270.000000" id="4" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="5" height="270.000000" id="5" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="6" height="270.000000" id="6" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="7" height="270.000000" id="7" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="8" height="270.000000" id="8" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="9" height="270.000000" id="9" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="10" height="270.000000" id="10" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="11" height="270.000000" id="11" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="12" height="270.000000" id="12" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="13" height="270.000000" id="13" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="14" height="270.000000" id="14" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="15" height="270.000000" id="15" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="16" height="270.000000" id="16" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="17" height="270.000000" id="17" thickness="32.000000" />
+		<archi-wall altitude="0.000000" generator="18" height="270.000000" id="18" thickness="32.000000" />
+	</archi-scene>
+	<mark-scene />
+	<aux-scene>
+		<aux-polyline closed="false" id="0" size="2">
+			<point adjust="False" name="pt" x="1104.000000" y="0.000000" z="432.000000" />
+			<point adjust="True" name="pt" x="312.000000" y="0.000000" z="432.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="1" size="2">
+			<point adjust="False" name="pt" x="1147.000000" y="0.000000" z="841.000000" />
+			<point adjust="True" name="pt" x="295.000000" y="0.000000" z="841.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="2" size="2">
+			<point adjust="True" name="pt" x="1391.000000" y="0.000000" z="125.000000" />
+			<point adjust="True" name="pt" x="1281.000000" y="0.000000" z="125.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="3" size="2">
+			<point adjust="False" name="pt" x="1696.000000" y="0.000000" z="841.000000" />
+			<point adjust="False" name="pt" x="1464.000000" y="0.000000" z="841.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="4" size="2">
+			<point adjust="False" name="pt" x="1696.000000" y="0.000000" z="639.000000" />
+			<point adjust="False" name="pt" x="1546.000000" y="0.000000" z="639.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="5" size="2">
+			<point adjust="True" name="pt" x="154.000000" y="0.000000" z="699.000000" />
+			<point adjust="True" name="pt" x="154.000000" y="0.000000" z="578.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="6" size="2">
+			<point adjust="False" name="pt" x="444.000000" y="0.000000" z="611.000000" />
+			<point adjust="False" name="pt" x="444.000000" y="0.000000" z="432.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="7" size="2">
+			<point adjust="False" name="pt" x="774.000000" y="0.000000" z="612.000000" />
+			<point adjust="False" name="pt" x="774.000000" y="0.000000" z="432.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="8" size="2">
+			<point adjust="False" name="pt" x="1104.000000" y="0.000000" z="615.000000" />
+			<point adjust="True" name="pt" x="1104.000000" y="0.000000" z="288.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="9" size="2">
+			<point adjust="False" name="pt" x="1546.000000" y="0.000000" z="639.000000" />
+			<point adjust="True" name="pt" x="1546.000000" y="0.000000" z="278.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="10" size="2">
+			<point adjust="False" name="pt" x="1696.000000" y="0.000000" z="841.000000" />
+			<point adjust="False" name="pt" x="1696.000000" y="0.000000" z="639.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="11" size="2">
+			<point adjust="True" name="pt" x="312.000000" y="0.000000" z="432.000000" />
+			<point adjust="True" name="pt" x="201.000000" y="0.000000" z="496.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="12" size="2">
+			<point adjust="True" name="pt" x="1281.000000" y="0.000000" z="125.000000" />
+			<point adjust="True" name="pt" x="1158.000000" y="0.000000" z="196.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="13" size="2">
+			<point adjust="True" name="pt" x="206.000000" y="0.000000" z="789.000000" />
+			<point adjust="True" name="pt" x="154.000000" y="0.000000" z="699.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="14" size="2">
+			<point adjust="True" name="pt" x="1546.000000" y="0.000000" z="278.000000" />
+			<point adjust="True" name="pt" x="1491.000000" y="0.000000" z="182.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="15" size="2">
+			<point adjust="True" name="pt" x="201.000000" y="0.000000" z="496.000000" />
+			<point adjust="True" name="pt" x="154.000000" y="0.000000" z="578.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="16" size="2">
+			<point adjust="True" name="pt" x="1158.000000" y="0.000000" z="196.000000" />
+			<point adjust="True" name="pt" x="1104.000000" y="0.000000" z="288.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="17" size="2">
+			<point adjust="True" name="pt" x="295.000000" y="0.000000" z="841.000000" />
+			<point adjust="True" name="pt" x="206.000000" y="0.000000" z="789.000000" />
+		</aux-polyline>
+		<aux-polyline closed="false" id="18" size="2">
+			<point adjust="True" name="pt" x="1491.000000" y="0.000000" z="182.000000" />
+			<point adjust="True" name="pt" x="1391.000000" y="0.000000" z="125.000000" />
+		</aux-polyline>
+	</aux-scene>
+</cemo-scene>

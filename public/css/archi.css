@@ -1,0 +1,123 @@
+body{
+    color: #000;
+    font-family: 微软雅黑;
+    font-size:13px;
+
+    background: #fff;
+    overflow:hidden;
+}
+#container{
+    height: 900px;
+}
+.left{
+    position: absolute;
+    height: 100%;
+    width: 250px;
+    background-color: rgba(142,231,204,0.2);
+    /*background-color: #8EE7CC 0.5;*/
+    z-index: 10;
+}
+.right{
+    background-color: #fff;
+}
+.top{
+    position: absolute;
+    background-color: #7C8DC1;
+    width: 100%;
+    height: 40px;
+    margin-left: 250px;
+}
+#can{
+    opacity: 0;
+    border:dashed 2px #CCC;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#export{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    right:0px;
+    bottom:0px;
+    border:dashed 2px #CCC;
+    overflow: scroll;
+    background-color: rgba(142,231,204,0.2);
+    opacity: 0;
+}
+#sofa1{
+    opacity: 1;
+}
+.furniture{
+    width:100px;
+    height:164px;
+    float: left;
+    margin-left: 17px;
+}
+.furniture p{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+.furniture-bt{
+    margin-top: 5px;
+    width: 90px;
+}
+.modal-content{
+    width: 800px;
+}
+.modal-body{
+/*    max-height: 750px;*/
+    max-height: 500px;
+    overflow-y:scroll;
+}
+.glyphicon{
+    cursor: pointer;
+}
+.panel-body-opera{
+    float: left;
+}
+.panel-body-opera span{
+    margin-left: 8px;
+}
+.fur-del-bt{
+    margin-left:15px;
+}
+.fur_single_trash{
+    margin-left: 50px;
+}
+.view-group{
+    float: left;
+}
+.view-group button{
+    margin-right:-4px;
+}
+.view-group img{
+    width: 17px;
+    height: 17px;
+}
+.example{
+   margin-bottom: 10px;
+}
+.example button{
+     width: 100px;
+}
+.img-texture{
+    width: 75px;
+    height: 75px;
+    margin-left: -7px;
+    cursor: pointer;
+}
+.color-bt{
+    margin-left: 30px;
+}
+.spot-light button{
+    color: rgb(200, 200, 200);
+}
+.spot-light input{
+    color: rgb(200, 200, 200);
+}
+#accordion_fur{
+    max-height:400px;
+    overflow-y:scroll;
+}

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>architecture</title>
+        <script src="js/three.js"></script>
+        <script src="js/Stats.js"></script>
+        <script src="js/OrbitControls.js"></script>
+        <script src="js/controls/TrackballControls.js"></script>
+
+        <script src="js/loaders/OBJLoader.js"></script>
+        <script src="js/loaders/JSONLoader.js"></script>
+        <script src="js/OBJExporter.js"></script>
+
+        <script src="js/archi.js"></script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/colorpicker.js"></script>
+        <link rel="stylesheet" href="css/colorpicker.css" type="text/css" />
+        <script type="text/javascript" charset="utf-8">
+        $(document).ready(function() {
+        $('#picker').farbtastic('#color');
+        });
+        </script>
+
+        <link rel="stylesheet" href="css/archi.css" type="text/css" media="screen"/>
+
+
+
+    </head>
+
+    <body onload="threeStart();">
+
+        <div class="top">
+            <div class="btn-toolbar" role="toolbar" style="margin-top:3px;margin-left:5px;">
+
+                <div class="view-group">
+                    <button type="button" data-toggle="tooltip" data-placement="bottom" title="正视图" class="btn btn-default" onclick="change_view(0)">
+                        <img src="icon/view_front.PNG">
+                    </button>
+                    <button type="button" data-toggle="tooltip" data-placement="bottom" title="后视图" class="btn btn-default" onclick="change_view(1)">
+                        <img src="icon/view_back.PNG">
+                    </button>
+                    <button type="button" data-toggle="tooltip" data-placement="bottom" title="左视图" class="btn btn-default" onclick="change_view(2)">
+                        <img src="icon/view_left.PNG">
+                    </button>
+                    <button type="button" data-toggle="tooltip" data-placement="bottom" title="右视图" class="btn btn-default" onclick="change_view(3)">
+                        <img src="icon/view_right.PNG">
+                    </button>
+                    <button type="button" data-toggle="tooltip" data-placement="bottom" title="顶视图" class="btn btn-default" onclick="change_view(4)">
+                        <img src="icon/view_top.PNG">
+                    </button>
+                    <button type="button" data-toggle="tooltip" data-placement="bottom" title="斜视图" class="btn btn-default" onclick="change_view(5)">
+                        <img src="icon/view_iso.PNG">
+                    </button>
+                </div>
+
+                <div class="view-group" style="margin-left:16px;">
+                    <button data-toggle="tooltip" data-placement="bottom" title="向左旋转" class="btn btn-default" onclick="change_rotate(0)">
+                        <span class="glyphicon glyphicon-chevron-left">
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="向右旋转" class="btn btn-default" onclick="change_rotate(1)">
+                        <span class="glyphicon glyphicon-chevron-right">
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="向上旋转" class="btn btn-default" onclick="change_rotate(2)">
+                        <span class="glyphicon glyphicon-chevron-up">
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="向下旋转" class="btn btn-default" onclick="change_rotate(3)">
+                        <span class="glyphicon glyphicon-chevron-down">
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="放大" class="btn btn-default" onclick="zoom_in()">
+                        <span class="glyphicon glyphicon-plus">
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="缩小" class="btn btn-default" onclick="zoom_out()">
+                        <span class="glyphicon glyphicon-minus">
+                    </button>
+                </div>
+
+                <div  class="view-group" style="margin-left:16px;">
+                    <button title="添加家具" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+                        家具
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="清空家具" type="button" class="btn btn-default" onclick="del_all_fur()">
+                        <span class="glyphicon glyphicon-trash">
+                    </button>
+                </div>
+                <div class="view-group" style="margin-left:16px;">
+                    <button type="button" class="btn btn-default" onclick="change_camera(0)">透视</button>
+                    <button type="button" class="btn btn-default" onclick="change_camera(1)">正投影</button>
+                </div>
+                <div  class="view-group" style="margin-left:16px;">
+                    <button id="show-plane" class="btn btn-default" onclick="show_plane(this)">显示平面图</button>
+                </div>
+                <div  class="view-group" style="margin-left:16px;">    
+                    <button id="exp-scene" data-toggle="tooltip" data-placement="bottom" title="导出当前场景" class="btn btn-default" onclick="exportToObj(this)">
+                        <span class="glyphicon glyphicon-download-alt">
+                    </button>
+                    <button data-toggle="tooltip" data-placement="bottom" title="清空当前场景" class="btn btn-default" onclick="delete_all_scene()">
+                        <span class="glyphicon glyphicon-trash">
+                    </button>
+                </div>
+
+            </div>           
+        </div>
+
+        <div class="left">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" 
+                          href="#collapseOne">
+                          房屋
+                        </a>
+                        <span class="glyphicon glyphicon-home">
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                      <div class="panel-body">
+                        <div class="btn-group">
+                            <button type="button" style="width:210px;" class="btn btn-default dropdown-toggle" 
+                                data-toggle="dropdown">
+                                选择房屋 <span class="caret"></span>
+                            </button>
+                            <ul style="width:210px;" class="dropdown-menu" role="menu">
+                                <li><a onclick="gethouse('floor1');">房屋一/三室一厅</a></li>
+                                <li><a onclick="gethouse('floor2');">房屋二/2x两室一厅</a></li>
+                                <li><a onclick="gethouse('floor3');">房屋三/十三室</a></li>
+                                <li class="divider"></li>
+                                <li><a onclick="gethouse('floor4');">房屋四/2x九室</a></li>
+                                <li><a onclick="gethouse('floor4r');">房屋五/倾斜版房屋四</a></li>
+                                <li class="divider"></li>
+                                <li><a onclick="gethouse('jca1');">房屋六/工厂</a></li>
+                                <li class="divider"></li>
+                                <li><a onclick="gethouse('r8');">房屋七/一室</a></li>
+                                <li><a onclick="gethouse('r10');">房屋八/一室</a></li>
+                                 <li class="divider"></li>
+                                <li><a onclick="gethouse('room1');">房屋九/两室</a></li>
+                                <li><a onclick="gethouse('room1r');">房屋十/倾斜的房间九</a></li>
+                                 <li class="divider"></li>
+                                <li><a onclick="gethouse('room3');">房屋十一/三室</a></li>
+                                <li><a onclick="gethouse('room4');">房屋十二/五室</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                贴图
+                            </a>
+                            <span class="glyphicon glyphicon-picture">
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion1">
+
+                                <div class="popover-options">
+                                    <!--data-container="body" -->
+                                    <a href="#" id="wall-texture" tabindex="0" class="btn btn-warning" role="button" data-toggle="popover" 
+                                        data-toggle="popover" data-content='
+                                        <p>纹理大小&nbsp
+                                            <span class="glyphicon glyphicon-plus" onclick="floor_texture_size(0)"></span>
+                                            <span class="glyphicon glyphicon-minus" onclick="floor_texture_size(1)"></span>
+                                        </p>
+                                        <img src="textures/floor/ground_0.png" class="img-thumbnail img-texture" onclick="floor_texture(0);">
+                                        <img src="textures/floor/ground_1.png" class="img-thumbnail img-texture" onclick="floor_texture(1);">
+                                        <img src="textures/floor/ground_2.png" class="img-thumbnail img-texture" onclick="floor_texture(2);">
+                                        <img src="textures/floor/ground_3.png" class="img-thumbnail img-texture" onclick="floor_texture(3);">
+                                        <img src="textures/floor/ground_4.png" class="img-thumbnail img-texture" onclick="floor_texture(4);">
+                                        <img src="textures/floor/ground_5.png" class="img-thumbnail img-texture" onclick="floor_texture(5);">
+
+
+                                        <img src="textures/floor/ground_9.png" class="img-thumbnail img-texture" onclick="floor_texture(9);">
+                                        <img src="textures/floor/ground_11.png" class="img-thumbnail img-texture" onclick="floor_texture(11);">
+                                        <img src="textures/floor/ground_12.png" class="img-thumbnail img-texture" onclick="floor_texture(12);">
+                                        <img src="textures/floor/ground_13.png" class="img-thumbnail img-texture" onclick="floor_texture(13);">
+
+                                        <img src="textures/floor/ground_16.png" class="img-thumbnail img-texture" onclick="floor_texture(16);">
+                                        <img src="textures/floor/ground_17.png" class="img-thumbnail img-texture" onclick="floor_texture(17);">
+                                        <img src="textures/floor/ground_19.png" class="img-thumbnail img-texture" onclick="floor_texture(19);">
+                                        <img src="textures/floor/ground_20.png" class="img-thumbnail img-texture" onclick="floor_texture(20);">
+                                        <img src="textures/floor/ground_22.png" class="img-thumbnail img-texture" onclick="floor_texture(22);">
+                                        <img src="textures/floor/ground_23.png" class="img-thumbnail img-texture" onclick="floor_texture(23);">
+
+                                        <img src="textures/floor/ground_25.png" class="img-thumbnail img-texture" onclick="floor_texture(25);">
+
+                                        '>
+                                        地板
+                                    </a>
+                                    <a href="#" id="floor-texture" tabindex="0" class="btn btn-warning" role="button" data-toggle="popover" 
+                                        data-toggle="popover" data-content='
+                                        <p>纹理大小&nbsp
+                                            <span class="glyphicon glyphicon-plus" onclick="wall_texture_size(0)"></span>
+                                            <span class="glyphicon glyphicon-minus" onclick="wall_texture_size(1)"></span>
+                                        </p>
+                                        <img src="textures/wall/wall_0.png" class="img-thumbnail img-texture" onclick="wall_texture(0);">
+                                        <img src="textures/wall/wall_1.png" class="img-thumbnail img-texture" onclick="wall_texture(1);">
+                                        <img src="textures/wall/wall_2.png" class="img-thumbnail img-texture" onclick="wall_texture(2);">
+                                        <img src="textures/wall/wall_5.png" class="img-thumbnail img-texture" onclick="wall_texture(5);">
+                                        <img src="textures/wall/wall_6.png" class="img-thumbnail img-texture" onclick="wall_texture(6);">
+                                        <img src="textures/wall/wall_7.png" class="img-thumbnail img-texture" onclick="wall_texture(7);">
+                                        <img src="textures/wall/wall_8.png" class="img-thumbnail img-texture" onclick="wall_texture(8);">
+                                        <img src="textures/wall/wall_9.png" class="img-thumbnail img-texture" onclick="wall_texture(9);">
+                                        <img src="textures/wall/wall_10.png" class="img-thumbnail img-texture" onclick="wall_texture(10);">
+                                        <img src="textures/wall/wall_11.png" class="img-thumbnail img-texture" onclick="wall_texture(11);">
+                                        <img src="textures/wall/wall_12.png" class="img-thumbnail img-texture" onclick="wall_texture(12);">
+                                        <img src="textures/wall/wall_13.png" class="img-thumbnail img-texture" onclick="wall_texture(13);">
+                                        <img src="textures/wall/wall_15.png" class="img-thumbnail img-texture" onclick="wall_texture(15);">
+                                        <img src="textures/wall/wall_16.png" class="img-thumbnail img-texture" onclick="wall_texture(16);">
+                                        <img src="textures/wall/wall_17.png" class="img-thumbnail img-texture" onclick="wall_texture(17);">
+                                        <img src="textures/wall/wall_18.png" class="img-thumbnail img-texture" onclick="wall_texture(18);">
+                                        <img src="textures/wall/wall_19.png" class="img-thumbnail img-texture" onclick="wall_texture(19);">
+
+                                        '>
+                                        墙壁
+                                    </a>                                 
+                                </div>
+
+                                </br>
+                                <form action="" style="width: 400px;">
+                                    <div class="form-item">
+                                        <input type="text" id="color" name="color" style="width:210px;" class="form-control" value="#123456" />
+                                    </div>
+                                    <div id="picker"></div>
+                                </form>
+
+                                <div class="btn-group color-bt">
+                                    <button class="btn btn-default" onclick="change_color(0);">门</button>
+                                    <button class="btn btn-default" onclick="change_color(1);">窗</button>
+                                    <button class="btn btn-default" onclick="change_color(2);">背景
+                                    </button>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseLight">
+                                光照
+                            </a>
+                            <span class="glyphicon glyphicon-adjust"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseLight" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-group">
+
+
+           
+                                  <div class="input-group">
+                                     <span class="input-group-addon">环境光</span>
+                                     <input id="light0" type="text" class="form-control" value="0.8">
+                                     <span class="input-group-btn">
+                                        <button class="btn btn-default" onclick="change_light(0)">
+                                           <span class="glyphicon glyphicon-chevron-left">
+                                        </button>
+                                        <button class="btn btn-default" onclick="change_light(1)">
+                                           <span class="glyphicon glyphicon-chevron-right">
+                                        </button>                                        
+                                     </span>
+                                  </div>
+                                  <br>
+                                  <div class="input-group">
+                                     <span class="input-group-addon">平行光</span>
+                                     <input id="light1" type="text" class="form-control" value="0.8">
+                                     <span class="input-group-btn">
+                                        <button class="btn btn-default" onclick="change_light(2)">
+                                           <span class="glyphicon glyphicon-chevron-left">
+                                        </button>
+                                        <button class="btn btn-default" onclick="change_light(3)">
+                                           <span class="glyphicon glyphicon-chevron-right">
+                                        </button>                                        
+                                     </span>
+                                  </div>
+                                  <br>                     
+<!--                                   <div class="input-group">
+                                     <span class="input-group-addon">聚光灯</span>
+                                     <input id="light2" type="text" class="form-control" value="0.5">
+                                     <span class="input-group-btn">
+                                        <button class="btn btn-default" onclick="change_light(4)">
+                                           <span class="glyphicon glyphicon-chevron-left">
+                                        </button>
+                                        <button class="btn btn-default" onclick="change_light(5)">
+                                           <span class="glyphicon glyphicon-chevron-right">
+                                        </button>                                        
+                                     </span>
+                                  </div>
+                                  <br>   -->
+                                  <div class="btn-group">
+                                      <button style="width:110px;" class="btn btn-default" onclick="shadow(1)">启用阴影</button>
+                                      <button style="width:109px;"class="btn btn-default" onclick="shadow(0)">禁用阴影</button>
+                                  </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFurniture">
+                                家具
+                            </a>
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseFurniture" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-group" id="accordion_fur">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseEg">
+                                样例
+                            </a>
+                            <span class="glyphicon glyphicon-info-sign"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseEg" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-group">
+                                <div class="btn-group">
+                                  <button class="btn btn-default" onclick="create_sample()">样例一</button>
+                                  <button class="btn btn-default" onclick="create_sample1()">样例二</button>
+                                  <button class="btn btn-default" onclick="del_sample()">清空</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">选择家具</h4>
+                 </div>
+                 <div class="modal-body">
+                    
+
+
+                    <div class="panel-group" id="accordion-m">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseOne-m">
+                              材质
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne-m" class="panel-collapse collapse in">
+                          <div class="panel-body">
+
+
+                            <div class="thumbnail furniture">
+                                <p>书架</p>
+                                <img src="models/test/bookshelf.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'bookshelf','书架')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>灯</p>
+                                <img src="models/test/deng.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'deng','灯')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>百叶窗</p>
+                                <img src="models/test/curtain.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'curtain','百叶窗')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>桌子</p>
+                                <img src="models/test/desk.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'desk','桌子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>桌子</p>
+                                <img src="models/test/desk1.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'desk1','桌子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>冰箱</p>
+                                <img src="models/test/refrigerator.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'refrigerator','冰箱')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>沙发</p>
+                                <img src="models/test/sofa.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'sofa','沙发')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>餐桌</p>
+                                <img src="models/test/table.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'table','餐桌')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>桌子</p>
+                                <img src="models/test/table1.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'table1','桌子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>桌椅</p>
+                                <img src="models/test/table2.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'table2','桌椅')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>马桶</p>
+                                <img src="models/test/toilet.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'toilet','马桶')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>墙饰</p>
+                                <img src="models/test/wall_dec.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(0, 'wall_dec','墙饰')">添加</button>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseThree-m">
+                              通用
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree-m" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="thumbnail furniture">
+                                <p>椅子</p>
+                                <img src="models/common/chair1.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(1, 'chair1','椅子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>椅子</p>
+                                <img src="models/common/chair2.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(1, 'chair2','椅子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>镜子</p>
+                                <img src="models/common/mirror.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(1, 'mirror','镜子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>桌子</p>
+                                <img src="models/common/table1.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(1, 'table1','桌子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>桌子</p>
+                                <img src="models/common/table2.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(1, 'table2','桌子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>镜子1</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>镜子2</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>镜子3</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>    
+                            <div class="thumbnail furniture">
+                                <p>镜子4</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>沙发床</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>网球</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>落地灯1</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>落地灯2</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>落地灯3</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>落地灯4</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>花瓶1</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>花瓶2</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>花瓶3</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>花瓶4</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>花瓶5</p>
+                                <img src="neko.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt">添加</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseTwo-m">
+                              客厅
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo-m" class="panel-collapse collapse">
+                          <div class="panel-body">
+
+                           <div class="thumbnail furniture">
+                                <p>沙发</p>
+                                <img src="models/livingroom/corner_sofa.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(2, 'corner_sofa','沙发')">添加</button>
+                            </div>
+                 
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseThr-m">
+                              卧室
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThr-m" class="panel-collapse collapse">
+                          <div class="panel-body">
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseFour-m">
+                              书房
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseFour-m" class="panel-collapse collapse">
+                          <div class="panel-body">
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseFive-m">
+                              厨房
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseFive-m" class="panel-collapse collapse">
+                          <div class="panel-body">
+                           <div class="thumbnail furniture">
+                                <p>柜子</p>
+                                <img src="models/kitchen/kitchen_shelf.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(5, 'kitchen_shelf','柜子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>柜子</p>
+                                <img src="models/kitchen/kitchen_shelf2.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(5, 'kitchen_shelf2','柜子')">添加</button>
+                            </div>
+                            <div class="thumbnail furniture">
+                                <p>柜子</p>
+                                <img src="models/kitchen/kitchen_shelf3.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(5, 'kitchen_shelf3','柜子')">添加</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion-m" 
+                              href="#collapseSix-m">
+                              卫生间
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseSix-m" class="panel-collapse collapse">
+                          <div class="panel-body">
+                            <div class="thumbnail furniture">
+                                <p>毛巾架</p>
+                                <img src="models/toilet/drying_with_towel.jpg" class="img-thumbnail">
+                                <button class="btn btn-default furniture-bt" onclick="add_furniture(6, 'drying_with_towel','毛巾架')">添加</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                 </div>
+                 <div class="modal-footer">
+                    <button type="button" class="btn btn-info" 
+                       data-dismiss="modal">
+                       关闭
+                    </button>
+                 </div>
+              </div><!-- /.modal-content -->
+           </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+
+
+
+
+
+        <div class="right">
+            <p id="ptxt1" style="text-align:center;">init</p>
+            <div id="container"></div>                
+        </div>        
+        
+        <canvas id="can" >4</canvas>
+        <div id="export"></div>
+
+
+        <script>
+           $(function () { $("[data-toggle='tooltip']").tooltip(); });
+        </script>
+        <script>
+            $(function () { 
+                $(".popover-options a").popover({             
+                    trigger: 'manual',
+                    placement: 'bottom', //top, bottom, left or right
+                    html: 'true',
+                    //content: ContentMethod(txt)
+                })
+                .on("mouseenter", function () {
+                    var _this = this;
+                    $(this).popover("show");
+                    $(this).siblings(".popover").on("mouseleave", function () {
+                    $(_this).popover('hide');
+                    });
+                })
+                .on("mouseleave", function () {
+                    var _this = this;
+                    setTimeout(function () {
+                    if (!$(".popover:hover").length) {
+                        $(_this).popover("hide")
+                    }
+                    }, 100);
+                });
+            });
+        </script>
+    </body>
+</html>

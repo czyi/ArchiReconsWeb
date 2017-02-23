@@ -1,0 +1,22 @@
+<cemo_scene>
+	<archi_info sizex="1605.000000" sizez="1601.000000" />
+	<archi_scene>
+		<archi_wall altitude="0.000000" generator="0" height="270.000000" id="0" thickness="23.000000" />
+		<archi_window altitude="90.000000" generator="33" height="160.000000" id="33" thickness="23.000000" wall_height="270.000000" />
+		<archi_door altitude="0.000000" generator="40" height="220.000000" id="40" thickness="23.000000" />
+	</archi_scene>
+	<mark_scene />
+	<aux_scene>
+		<aux_polyline closed="false" id="0" size="2">
+			<point name="pt" x="710.000000" y="0.000000" z="90.000000" />
+			<point name="pt" x="82.000000" y="0.000000" z="90.000000" />
+		<aux_polyline closed="false" id="33" size="2">
+			<point name="pt" x="82.000000" y="0.000000" z="493.000000" />
+			<point name="pt" x="82.000000" y="0.000000" z="366.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="40" size="2">
+			<point name="pt" x="648.000000" y="0.000000" z="613.000000" />
+			<point name="pt" x="648.000000" y="0.000000" z="488.000000" />
+		</aux_polyline>
+	</aux_scene>
+</cemo_scene>

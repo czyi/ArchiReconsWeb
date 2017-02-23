@@ -1,0 +1,503 @@
+<cemo_scene>
+	<archi_info sizex="1774.000000" sizez="2401.000000" />
+	<archi_scene>
+		<archi_wall altitude="0.000000" generator="0" height="270.000000" id="0" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="1" height="270.000000" id="1" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="2" height="270.000000" id="2" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="3" height="270.000000" id="3" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="4" height="270.000000" id="4" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="5" height="270.000000" id="5" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="6" height="270.000000" id="6" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="7" height="270.000000" id="7" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="8" height="270.000000" id="8" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="9" height="270.000000" id="9" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="10" height="270.000000" id="10" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="11" height="270.000000" id="11" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="12" height="270.000000" id="12" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="13" height="270.000000" id="13" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="14" height="270.000000" id="14" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="15" height="270.000000" id="15" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="16" height="270.000000" id="16" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="17" height="270.000000" id="17" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="18" height="270.000000" id="18" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="19" height="270.000000" id="19" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="20" height="270.000000" id="20" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="21" height="270.000000" id="21" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="22" height="270.000000" id="22" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="23" height="270.000000" id="23" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="24" height="270.000000" id="24" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="25" height="270.000000" id="25" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="26" height="270.000000" id="26" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="27" height="270.000000" id="27" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="28" height="270.000000" id="28" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="29" height="270.000000" id="29" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="30" height="270.000000" id="30" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="31" height="270.000000" id="31" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="32" height="270.000000" id="32" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="33" height="270.000000" id="33" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="34" height="270.000000" id="34" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="35" height="270.000000" id="35" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="36" height="270.000000" id="36" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="37" height="270.000000" id="37" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="38" height="270.000000" id="38" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="39" height="270.000000" id="39" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="40" height="270.000000" id="40" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="41" height="270.000000" id="41" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="42" height="270.000000" id="42" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="43" height="270.000000" id="43" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="44" height="270.000000" id="44" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="45" height="270.000000" id="45" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="46" height="270.000000" id="46" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="47" height="270.000000" id="47" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="48" height="270.000000" id="48" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="49" height="270.000000" id="49" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="50" height="270.000000" id="50" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="51" height="270.000000" id="51" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="52" height="270.000000" id="52" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="53" height="270.000000" id="53" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="54" height="270.000000" id="54" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="55" height="270.000000" id="55" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="56" height="270.000000" id="56" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="57" height="270.000000" id="57" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="58" height="270.000000" id="58" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="59" height="270.000000" id="59" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="60" height="270.000000" id="60" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="61" height="270.000000" id="61" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="62" height="270.000000" id="62" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="63" height="270.000000" id="63" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="64" height="270.000000" id="64" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="65" height="270.000000" id="65" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="66" height="270.000000" id="66" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="67" height="270.000000" id="67" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="68" height="270.000000" id="68" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="69" height="270.000000" id="69" thickness="23.000000" />
+		<archi_wall altitude="0.000000" generator="70" height="270.000000" id="70" thickness="23.000000" />
+		<archi_window altitude="90.000000" generator="71" height="160.000000" id="71" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="72" height="160.000000" id="72" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="73" height="160.000000" id="73" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="74" height="160.000000" id="74" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="75" height="160.000000" id="75" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="76" height="160.000000" id="76" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="77" height="160.000000" id="77" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="78" height="160.000000" id="78" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="79" height="160.000000" id="79" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="80" height="160.000000" id="80" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="81" height="160.000000" id="81" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="82" height="160.000000" id="82" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="83" height="160.000000" id="83" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="84" height="160.000000" id="84" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="85" height="160.000000" id="85" thickness="23.000000" wall_height="270.000000" />
+		<archi_window altitude="90.000000" generator="86" height="160.000000" id="86" thickness="23.000000" wall_height="270.000000" />
+		<archi_door altitude="0.000000" generator="87" height="220.000000" id="87" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="88" height="220.000000" id="88" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="89" height="220.000000" id="89" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="90" height="220.000000" id="90" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="91" height="220.000000" id="91" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="92" height="220.000000" id="92" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="93" height="220.000000" id="93" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="94" height="220.000000" id="94" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="95" height="220.000000" id="95" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="96" height="220.000000" id="96" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="97" height="220.000000" id="97" thickness="23.000000" />
+		<archi_door altitude="0.000000" generator="98" height="220.000000" id="98" thickness="23.000000" />
+	</archi_scene>
+	<mark_scene />
+	<aux_scene>
+		<aux_polyline closed="false" id="0" size="2">
+			<point name="pt" x="1046.000000" y="0.000000" z="87.000000" />
+			<point name="pt" x="258.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="1" size="2">
+			<point name="pt" x="599.000000" y="0.000000" z="373.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="373.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="2" size="2">
+			<point name="pt" x="599.000000" y="0.000000" z="537.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="537.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="3" size="2">
+			<point name="pt" x="547.000000" y="0.000000" z="975.000000" />
+			<point name="pt" x="181.000000" y="0.000000" z="975.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="4" size="2">
+			<point name="pt" x="363.000000" y="0.000000" z="779.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="779.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="5" size="2">
+			<point name="pt" x="583.000000" y="0.000000" z="783.000000" />
+			<point name="pt" x="525.000000" y="0.000000" z="783.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="6" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="783.000000" />
+			<point name="pt" x="679.000000" y="0.000000" z="783.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="7" size="2">
+			<point name="pt" x="537.000000" y="0.000000" z="1221.000000" />
+			<point name="pt" x="181.000000" y="0.000000" z="1221.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="8" size="2">
+			<point name="pt" x="547.000000" y="0.000000" z="1409.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1409.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="9" size="2">
+			<point name="pt" x="369.000000" y="0.000000" z="1607.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1607.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="10" size="2">
+			<point name="pt" x="589.000000" y="0.000000" z="1607.000000" />
+			<point name="pt" x="515.000000" y="0.000000" z="1607.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="11" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="1607.000000" />
+			<point name="pt" x="685.000000" y="0.000000" z="1607.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="12" size="2">
+			<point name="pt" x="597.000000" y="0.000000" z="1853.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1853.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="13" size="2">
+			<point name="pt" x="597.000000" y="0.000000" z="2017.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="2017.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="14" size="2">
+			<point name="pt" x="1053.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="258.000000" y="0.000000" z="2301.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="15" size="2">
+			<point name="pt" x="1247.000000" y="0.000000" z="87.000000" />
+			<point name="pt" x="1173.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="16" size="2">
+			<point name="pt" x="1247.000000" y="0.000000" z="401.000000" />
+			<point name="pt" x="723.000000" y="0.000000" z="401.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="17" size="2">
+			<point name="pt" x="1565.000000" y="0.000000" z="845.000000" />
+			<point name="pt" x="1071.000000" y="0.000000" z="845.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="18" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="745.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="745.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="19" size="2">
+			<point name="pt" x="789.000000" y="0.000000" z="931.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="931.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="20" size="2">
+			<point name="pt" x="1071.000000" y="0.000000" z="937.000000" />
+			<point name="pt" x="1009.000000" y="0.000000" z="937.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="21" size="2">
+			<point name="pt" x="1037.000000" y="0.000000" z="1193.000000" />
+			<point name="pt" x="1009.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="22" size="2">
+			<point name="pt" x="1193.000000" y="0.000000" z="1193.000000" />
+			<point name="pt" x="1133.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="23" size="2">
+			<point name="pt" x="1009.000000" y="0.000000" z="1283.000000" />
+			<point name="pt" x="979.000000" y="0.000000" z="1283.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="24" size="2">
+			<point name="pt" x="1041.000000" y="0.000000" z="1501.000000" />
+			<point name="pt" x="1009.000000" y="0.000000" z="1501.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="25" size="2">
+			<point name="pt" x="1643.000000" y="0.000000" z="1501.000000" />
+			<point name="pt" x="1133.000000" y="0.000000" z="1501.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="26" size="2">
+			<point name="pt" x="883.000000" y="0.000000" z="1283.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1283.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="27" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="1639.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1639.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="28" size="2">
+			<point name="pt" x="1245.000000" y="0.000000" z="1987.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1987.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="29" size="2">
+			<point name="pt" x="1245.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="1180.000000" y="0.000000" z="2301.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="30" size="2">
+			<point name="pt" x="1643.000000" y="0.000000" z="1193.000000" />
+			<point name="pt" x="1289.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="31" size="2">
+			<point name="pt" x="258.000000" y="0.000000" z="171.000000" />
+			<point name="pt" x="258.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="32" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="413.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="297.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="33" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="601.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="501.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="34" size="2">
+			<point name="pt" x="547.000000" y="0.000000" z="975.000000" />
+			<point name="pt" x="547.000000" y="0.000000" z="783.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="35" size="2">
+			<point name="pt" x="598.000000" y="0.000000" z="219.000000" />
+			<point name="pt" x="598.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="36" size="2">
+			<point name="pt" x="599.000000" y="0.000000" z="407.000000" />
+			<point name="pt" x="599.000000" y="0.000000" z="315.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="37" size="2">
+			<point name="pt" x="599.000000" y="0.000000" z="537.000000" />
+			<point name="pt" x="599.000000" y="0.000000" z="503.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="38" size="2">
+			<point name="pt" x="181.000000" y="0.000000" z="1221.000000" />
+			<point name="pt" x="181.000000" y="0.000000" z="975.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="39" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="837.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="727.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="40" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="975.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="925.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="41" size="2">
+			<point name="pt" x="351.000000" y="0.000000" z="1409.000000" />
+			<point name="pt" x="351.000000" y="0.000000" z="1221.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="42" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="1461.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1409.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="43" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="1669.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1549.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="44" size="2">
+			<point name="pt" x="547.000000" y="0.000000" z="1607.000000" />
+			<point name="pt" x="547.000000" y="0.000000" z="1409.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="45" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="1895.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1795.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="46" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="2091.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1979.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="47" size="2">
+			<point name="pt" x="258.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="258.000000" y="0.000000" z="2217.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="48" size="2">
+			<point name="pt" x="598.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="598.000000" y="0.000000" z="2187.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="49" size="2">
+			<point name="pt" x="597.000000" y="0.000000" z="1889.000000" />
+			<point name="pt" x="597.000000" y="0.000000" z="1853.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="50" size="2">
+			<point name="pt" x="597.000000" y="0.000000" z="2091.000000" />
+			<point name="pt" x="597.000000" y="0.000000" z="1985.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="51" size="2">
+			<point name="pt" x="722.000000" y="0.000000" z="261.000000" />
+			<point name="pt" x="722.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="52" size="2">
+			<point name="pt" x="723.000000" y="0.000000" z="401.000000" />
+			<point name="pt" x="723.000000" y="0.000000" z="357.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="53" size="2">
+			<point name="pt" x="1071.000000" y="0.000000" z="937.000000" />
+			<point name="pt" x="1071.000000" y="0.000000" z="745.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="54" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="551.000000" />
+			<point name="pt" x="1179.000000" y="0.000000" z="401.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="55" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="745.000000" />
+			<point name="pt" x="1179.000000" y="0.000000" z="677.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="56" size="2">
+			<point name="pt" x="1247.000000" y="0.000000" z="401.000000" />
+			<point name="pt" x="1247.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="57" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="1147.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="745.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="58" size="2">
+			<point name="pt" x="1161.000000" y="0.000000" z="1501.000000" />
+			<point name="pt" x="1161.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="59" size="2">
+			<point name="pt" x="1565.000000" y="0.000000" z="1193.000000" />
+			<point name="pt" x="1565.000000" y="0.000000" z="1079.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="60" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="1379.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1243.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="61" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="1639.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1505.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="62" size="2">
+			<point name="pt" x="1009.000000" y="0.000000" z="1639.000000" />
+			<point name="pt" x="1009.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="63" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="1709.000000" />
+			<point name="pt" x="1179.000000" y="0.000000" z="1639.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="64" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="1987.000000" />
+			<point name="pt" x="1179.000000" y="0.000000" z="1835.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="65" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="2047.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1987.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="66" size="2">
+			<point name="pt" x="722.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="722.000000" y="0.000000" z="2143.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="67" size="2">
+			<point name="pt" x="1565.000000" y="0.000000" z="952.000000" />
+			<point name="pt" x="1565.000000" y="0.000000" z="845.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="68" size="2">
+			<point name="pt" x="1643.000000" y="0.000000" z="1292.000000" />
+			<point name="pt" x="1643.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="69" size="2">
+			<point name="pt" x="1643.000000" y="0.000000" z="1501.000000" />
+			<point name="pt" x="1643.000000" y="0.000000" z="1419.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="70" size="2">
+			<point name="pt" x="1245.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="1245.000000" y="0.000000" z="1987.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="71" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="297.000000" />
+			<point name="pt" x="258.000000" y="0.000000" z="171.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="72" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="501.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="413.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="73" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="727.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="601.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="74" size="2">
+			<point name="pt" x="259.000000" y="0.000000" z="925.000000" />
+			<point name="pt" x="259.000000" y="0.000000" z="837.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="75" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="1549.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1461.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="76" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="1795.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1669.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="77" size="2">
+			<point name="pt" x="257.000000" y="0.000000" z="1979.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="1895.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="78" size="2">
+			<point name="pt" x="258.000000" y="0.000000" z="2217.000000" />
+			<point name="pt" x="257.000000" y="0.000000" z="2091.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="79" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="1505.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1379.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="80" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="677.000000" />
+			<point name="pt" x="1179.000000" y="0.000000" z="551.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="81" size="2">
+			<point name="pt" x="1179.000000" y="0.000000" z="1835.000000" />
+			<point name="pt" x="1179.000000" y="0.000000" z="1709.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="82" size="2">
+			<point name="pt" x="1565.000000" y="0.000000" z="1079.000000" />
+			<point name="pt" x="1565.000000" y="0.000000" z="952.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="83" size="2">
+			<point name="pt" x="1643.000000" y="0.000000" z="1419.000000" />
+			<point name="pt" x="1643.000000" y="0.000000" z="1292.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="84" size="2">
+			<point name="pt" x="1173.000000" y="0.000000" z="87.000000" />
+			<point name="pt" x="1046.000000" y="0.000000" z="87.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="85" size="2">
+			<point name="pt" x="1133.000000" y="0.000000" z="1501.000000" />
+			<point name="pt" x="1041.000000" y="0.000000" z="1501.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="86" size="2">
+			<point name="pt" x="1180.000000" y="0.000000" z="2301.000000" />
+			<point name="pt" x="1053.000000" y="0.000000" z="2301.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="87" size="2">
+			<point name="pt" x="599.000000" y="0.000000" z="315.000000" />
+			<point name="pt" x="598.000000" y="0.000000" z="219.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="88" size="2">
+			<point name="pt" x="599.000000" y="0.000000" z="503.000000" />
+			<point name="pt" x="599.000000" y="0.000000" z="407.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="89" size="2">
+			<point name="pt" x="597.000000" y="0.000000" z="1985.000000" />
+			<point name="pt" x="597.000000" y="0.000000" z="1889.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="90" size="2">
+			<point name="pt" x="598.000000" y="0.000000" z="2187.000000" />
+			<point name="pt" x="597.000000" y="0.000000" z="2091.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="91" size="2">
+			<point name="pt" x="723.000000" y="0.000000" z="357.000000" />
+			<point name="pt" x="722.000000" y="0.000000" z="261.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="92" size="2">
+			<point name="pt" x="721.000000" y="0.000000" z="1243.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="1147.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="93" size="2">
+			<point name="pt" x="722.000000" y="0.000000" z="2143.000000" />
+			<point name="pt" x="721.000000" y="0.000000" z="2047.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="94" size="2">
+			<point name="pt" x="679.000000" y="0.000000" z="783.000000" />
+			<point name="pt" x="583.000000" y="0.000000" z="783.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="95" size="2">
+			<point name="pt" x="1133.000000" y="0.000000" z="1193.000000" />
+			<point name="pt" x="1037.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="96" size="2">
+			<point name="pt" x="1289.000000" y="0.000000" z="1193.000000" />
+			<point name="pt" x="1193.000000" y="0.000000" z="1193.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="97" size="2">
+			<point name="pt" x="979.000000" y="0.000000" z="1283.000000" />
+			<point name="pt" x="883.000000" y="0.000000" z="1283.000000" />
+		</aux_polyline>
+		<aux_polyline closed="false" id="98" size="2">
+			<point name="pt" x="685.000000" y="0.000000" z="1607.000000" />
+			<point name="pt" x="589.000000" y="0.000000" z="1607.000000" />
+		</aux_polyline>
+	</aux_scene>
+</cemo_scene>

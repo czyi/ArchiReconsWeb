@@ -1,0 +1,21 @@
+{
+  "cemo_scene": {
+    "archi_info": {"-sizex": "1605.0", "-sizez": "1601.0"},
+    "archi_scene": {
+      "archi_wall": {"-altitude": "0.0", "-generator": "0", 
+                     "-height": "270.0", "-id": "0", "-thickness": "23.0"},
+      "archi_window": {"-altitude": "90.0", "-generator": "33", "-height": "160.0",
+                       "-id": "33", "-thickness": "23.0", "-wall_height": "270.0"},
+      "archi_door": {"-altitude": "0.0", "-generator": "40", 
+                     "-height": "220.0", "-id": "40", "-thickness": "23.0"}
+    },
+    "aux_scene": {
+      "aux_polyline": {"-closed": "false", "-id": "0", "-size": "2",
+        "point": [
+          {"-name": "pt", "-x": "710.0", "-y": "0.0", "-z": "90.0"},
+          {"-name": "pt", "-x": "82.0", "-y": "0.0", "-z": "90.0"}
+        ]
+      }
+    }
+  }
+}
